@@ -20,7 +20,7 @@
 		<h1>Registration Form</h1>
 		<form action="">
 			<fieldset>
-				<legend><strong>User registration</strong></legend>
+				<legend>Name</legend>
 				<br />
 				<label for="firstname">Firstname:</label>
 				<input type="text" id="firstname" />
@@ -30,6 +30,13 @@
 				<input type="text" id="lastname" />
 				<br />
 				<br />
+			</fieldset>
+			<fieldset>
+				<label>Address:</label>
+				<textarea cols="30" rows="5"></textarea>
+				<br />
+				<br />
+				<legend>About You</legend>
 				<label>Gender:</label>
 				<input type="radio" name="gender" id="male" value="male" />
 				<label for="male">Male</label>
@@ -47,8 +54,14 @@
 				</select>
 				<br />
 				<br />
-				<button type="submit">Submit</button>
+				<label>Hobbies:</label>
+				<input type="checkbox" name="playcricket" />Play Cricket
+				<input type="checkbox" name="reading" />Reading
+				<input type="checkbox" name="cooking" />Cooking
 			</fieldset>
+			<br />
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
 		</form>
 	</body>
 </html>
