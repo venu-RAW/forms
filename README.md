@@ -1,8 +1,8 @@
-# forms
+# Forms
 
 This is the simple user registration form asking abaout the user details during registration.
 
-This form is build by using simplpe HTML.
+This form is build by using simplpe HTML elements like form, input, label, button, select, radio.
 
 # Live demo 
 
