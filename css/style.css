@@ -1,0 +1,314 @@
+/* * Generic Css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+}
+
+/* * Start */
+.container {
+	background-color: #fff;
+	width: 50rem;
+	/* margin: 50px auto 0;
+	padding: 25px; */
+	margin: 10rem auto 0;
+	padding: 3.5rem 2.5rem;
+	border-top: 0.5rem solid #dc143c;
+	box-shadow: 0 0 0.3rem rgba(41, 26, 26, 0.5);
+	border-radius: 0.5rem;
+}
+
+.container h2 {
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+	/* padding-bottom: 30px; */
+	padding-bottom: 1.5rem;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #dc143c;
+}
+
+.input-details {
+	width: 90%;
+	position: relative;
+	/* margin: 20px auto; */
+	margin: 2.5rem auto;
+}
+
+.input-details span {
+	margin-left: 3.5rem;
+}
+
+.name {
+	width: 45%;
+	padding: 1rem 0.4rem 1rem 4.5rem;
+}
+
+.other-details {
+	width: 100%;
+	padding: 1rem 0 1rem 4.5rem;
+}
+
+.icons {
+	padding: 0.8rem 1rem;
+	color: #dc143c;
+}
+
+.input-details .email {
+	padding: 0.8rem 0.7rem;
+	color: rgb(220, 20, 60);
+}
+
+.input-details i {
+	position: absolute;
+	font-size: 1.8rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.3rem #767676;
+}
+
+.name,
+.other-details {
+	border: none;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 0 0.3rem #767676;
+}
+
+.name:hover,
+.other-details:hover {
+	background-color: #fafafa;
+}
+
+.name:focus,
+.other-details:focus {
+	box-shadow: 0 0 6p.6remx rgba(118, 118, 118, 0.9);
+}
+
+input::placeholder {
+	font-family: "Josefin Sans", sans-serif;
+	letter-spacing: 0.1rem;
+}
+
+input {
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.2rem rgba(118, 118, 118, 0.1);
+}
+
+.radio-btn {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 0.1rem;
+	margin: -0.1rem;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 0.1rem;
+}
+
+.gender {
+	margin-right: 1.6rem;
+	color: #666464;
+	font-size: 1.3rem;
+}
+
+.gender::before {
+	content: "";
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-right: 0.8rem;
+	border-radius: 100%;
+	vertical-align: -0.3rem;
+	border: 0.2rem solid #cccccc;
+	padding: 0.25rem;
+	background-color: transparent;
+	background-clip: content-box;
+	transition: all 0.2s ease;
+}
+
+.radio-btn:hover + .gender::before {
+	border-color: #000;
+}
+
+.radio-btn:checked + .gender::before {
+	background-color: #dc143c;
+	border-color: #dc143c;
+}
+
+.country {
+	width: 100%;
+	height: 3.5rem;
+	padding: 0 1.5rem;
+	font-family: "Josefin Sans", sans-serif;
+	color: #666464;
+	letter-spacing: 0.1rem;
+	display: inline-block;
+	background-color: #fff;
+	border: 0.1rem solid #cccccc;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.2rem rgba(118, 118, 118, 0.1);
+	appearance: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	/* text-indent: 5px; */
+}
+
+.country::-ms-expand {
+	display: none;
+}
+
+.country:hover,
+.country:focus {
+	background-color: #fafafa;
+	box-shadow: 0 0;
+	box-shadow: 0 0 0.2rem rgba(118, 118, 118, 1);
+	outline: none;
+}
+
+.arrow {
+	position: absolute;
+	top: calc(50% - 0.4rem);
+	right: 1.5rem;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	border-width: 0.8rem 0.5rem 0 0.5rem;
+	border-style: solid;
+	border-color: rgb(118, 118, 118) transparent transparent transparent;
+}
+
+.check {
+	margin-right: 1.6rem;
+	position: relative;
+	color: #666464;
+	font-size: 1.5rem;
+}
+
+.check::before {
+	content: "";
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-right: 0.8rem;
+	vertical-align: -0.2rem;
+	border: 0.2rem solid #cccccc;
+	border-radius: 0.5rem;
+	padding: 0.25rem;
+	background-color: transparent;
+	background-clip: content-box;
+	transition: all 0.2s ease;
+}
+
+.check::after {
+	border-right: 0.2rem solid #000;
+	border-top: 0.2rem solid #000;
+	content: "";
+	height: 2rem;
+	left: 0.2rem;
+	position: absolute;
+	top: 0.7rem;
+	transform: scaleX(-1) rotate(135deg);
+	transform-origin: left top;
+	width: 0.7rem;
+	display: none;
+}
+
+.checkbox-btn {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 0.1rem;
+	margin: -0.1rem;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 0.1rem;
+}
+
+.checkbox-btn:hover + .check::before {
+	border-color: #dc143c;
+}
+
+.checkbox-btn:checked + .check::before {
+	border-color: #dc143c;
+}
+
+.checkbox-btn:checked + .check::after {
+	animation: checkAnimate 0.8s ease 0s running;
+	display: block;
+	width: 0.7rem;
+	height: 2rem;
+	border-color: #dc143c;
+}
+
+@keyframes checkAnimate {
+	0% {
+		height: 0;
+		width: 0;
+	}
+	25% {
+		height: 0;
+		width: 0.7rem;
+	}
+	50% {
+		height: 2rem;
+		width: 0.7rem;
+	}
+}
+
+.btn {
+	font-family: "Josefin Sans";
+	letter-spacing: 0.5px;
+	background-color: #dc143c;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	width: 100%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.8rem;
+	margin-top: 1rem;
+}
+
+.btn:hover {
+	background-color: #dc143c;
+}
+
+.btn:focus {
+	background-color: #dc143c;
+}
+
+/* * Media Queries */
+
+@media (max-width: 480px) {
+	.container {
+		width: 90%;
+		padding: 2.5rem 1rem;
+	}
+	.input-details {
+		margin-bottom: -1rem;
+	}
+	.name {
+		width: 100%;
+		padding: 1.1rem 0 0.8rem 4rem;
+		/* margin-bottom: 10px; */
+	}
+	.name:not(:last-child) {
+		margin-bottom: 1.5rem;
+	}
+	.input-details span {
+		padding: 0;
+		margin: 0;
+	}
+}

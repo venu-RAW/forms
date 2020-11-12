@@ -14,54 +14,105 @@
 			type="image/x-icon"
 		/>
 
-		<title>Form</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<title>Registration Form</title>
 	</head>
 	<body>
-		<h1>Registration Form</h1>
-		<form action="">
-			<fieldset>
-				<legend>Name</legend>
-				<br />
-				<label for="firstname">Firstname:</label>
-				<input type="text" id="firstname" />
-				<br />
-				<br />
-				<label for="lastname">Lastname:</label>
-				<input type="text" id="lastname" />
-				<br />
-				<br />
-			</fieldset>
-			<fieldset>
-				<label>Address:</label>
-				<textarea cols="30" rows="5"></textarea>
-				<br />
-				<br />
-				<legend>About You</legend>
-				<label>Gender:</label>
-				<input type="radio" name="gender" id="male" value="male" />
-				<label for="male">Male</label>
-				<input type="radio" name="gender" id="female" value="female" />
-				<label for="female">Female</label>
-				<br />
-				<br />
-				<label>City:</label>
-				<select name="city">
-					<option value="mumbai">Mumbai</option>
-					<option value="pune">Pune</option>
-					<option value="hyderabad">Hyderabad</option>
-					<option value="delhi">Delhi</option>
-					<option value="bangalore">Bangalore</option>
-				</select>
-				<br />
-				<br />
-				<label>Hobbies:</label>
-				<input type="checkbox" name="playcricket" />Play Cricket
-				<input type="checkbox" name="reading" />Reading
-				<input type="checkbox" name="cooking" />Cooking
-			</fieldset>
-			<br />
-			<button type="submit">Submit</button>
-			<button type="reset">Reset</button>
-		</form>
+		<!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+		<!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+		<!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
+
+		<div class="container">
+			<h2>Registration Form</h2>
+			<div class="form-container">
+				<form>
+					<div class="input-details">
+						<i class="fa fa-user icons" aria-hidden="true"></i>
+						<input type="text" placeholder="First Name" class="name" />
+						<span>
+							<i class="fa fa-user icons" aria-hidden="true"></i>
+							<input type="text" placeholder="Last Name" class="name" />
+						</span>
+					</div>
+					<div class="input-details">
+						<i class="fa fa-envelope email" aria-hidden="true"></i>
+						<input
+							type="text"
+							placeholder="Email Id"
+							class="other-details"
+						/>
+					</div>
+					<div class="input-details">
+						<i class="fa fa-lock icons" aria-hidden="true"></i>
+						<input
+							type="text"
+							placeholder="Password"
+							class="other-details"
+						/>
+					</div>
+					<div class="input-details">
+						<i class="fa fa-lock icons" aria-hidden="true"></i>
+						<input
+							type="text"
+							placeholder="Confirm Password"
+							class="other-details"
+						/>
+					</div>
+					<div class="input-details">
+						<input
+							type="radio"
+							name="gender"
+							class="radio-btn"
+							id="male"
+						/>
+						<label for="male" class="gender">Male</label>
+						<input
+							type="radio"
+							name="gender"
+							class="radio-btn"
+							id="female"
+						/>
+						<label for="female" class="gender">Female</label>
+					</div>
+					<div class="input-details">
+						<select name="country" class="country">
+							<option value="australia">Australia</option>
+							<option value="germany">Germany</option>
+							<option value="india" selected>India</option>
+							<option value="usa">United States of America</option>
+							<option value="japan">Japan</option>
+							<option value="italy">Italy</option>
+							<option value="korea">Korea</option>
+							<option value="morocco">Morocco</option>
+							<option value="newzealand">New Zealand</option>
+							<option value="russia">Russia</option>
+						</select>
+						<div class="arrow"></div>
+					</div>
+					<div class="input-details">
+						<input type="checkbox" id="terms" class="checkbox-btn" />
+						<label for="terms" class="check"
+							>I agree with terms and conditions.</label
+						>
+					</div>
+					<div class="input-details">
+						<input type="submit" class="btn" value="Submit" />
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
